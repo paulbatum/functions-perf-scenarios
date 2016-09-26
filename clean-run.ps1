@@ -1,14 +1,15 @@
-git clean -xdf
-.\copy-tools.bat
+rm Scenario*\*.txt
+rm Scenario*\*.pdf
+
 pushd Scenario05-Queue-HighCPU-Static-Node
 .\run-low.bat | tee output.txt
 popd
 pushd Scenario06-Queue-HighCPU-Static-CSharp
 .\run-low.bat | tee output.txt
 popd
-pushd Scenario07-Queue-HighMemory-Static-Node
-.\run-low.bat | tee output.txt
-popd
+# pushd Scenario07-Queue-HighMemory-Static-Node
+# .\run-low.bat | tee output.txt
+# popd
 pushd Scenario08-Queue-HighMemory-Static-CSharp
 .\run-low.bat | tee output.txt
 popd
