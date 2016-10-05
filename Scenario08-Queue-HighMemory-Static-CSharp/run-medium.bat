@@ -1,0 +1,3 @@
+@Echo Scenario08-Queue-HighMemory-Static-CSharp
+..\bin\SampleUsages.exe QueueTest Queue-CSharp-HighMemory ..\queueitems-static-16.config samples-csharp-memory-perf-test samples-csharp-memory-perf-test-output Linear 100 true 5
+..\bin\SampleUsages.exe QueueTest Queue-CSharp-HighMemory ..\queueitems-static-16.config samples-csharp-memory-perf-test samples-csharp-memory-perf-test-output Linear 100 true 20
