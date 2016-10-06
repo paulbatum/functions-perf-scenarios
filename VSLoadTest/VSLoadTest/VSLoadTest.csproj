@@ -53,22 +53,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Http-CSharp-LowUsage.webtest">
+    <None Include="LowUsage-Static-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Http-CSharp-HighMemory-64.webtest">
+    <None Include="HighMemory-Static-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Http-NodeJs-LowUsage.webtest">
+    <None Include="LowUsage-Static-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Http-NodeJs-HighMemory-64.webtest">
+    <None Include="HighMemory-Static-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Http-NodeJs-CPUIntensive-64.webtest">
+    <None Include="HighCPU-Static-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Http-CSharp-CPUIntensive-64.webtest">
+    <None Include="HighCPU-Static-CSharp.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="LoadTest.loadtest">
