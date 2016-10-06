@@ -53,25 +53,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LowUsage-Static-CSharp.webtest">
+    <None Include="HttpStatic-MediumLoad.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="HighMemory-Static-CSharp.webtest">
+    <None Include="Scenario01-HighCPU-Static-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="LowUsage-Static-Node.webtest">
+    <None Include="Scenario02-HighCPU-Static-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="HighMemory-Static-Node.webtest">
+    <None Include="Scenario03-LowUsage-Static-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="HighCPU-Static-Node.webtest">
+    <None Include="Scenario04-LowUsage-Static-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="HighCPU-Static-CSharp.webtest">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <None Include="Scenario11-HighMemory-Static-Node.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="LoadTest.loadtest">
+    <None Include="Scenario12-HighMemory-Static-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
