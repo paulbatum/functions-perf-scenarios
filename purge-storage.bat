@@ -1,0 +1,1 @@
+.\bin\SampleUsages.exe PurgeFunctionsTable
