@@ -56,25 +56,26 @@
     <None Include="HttpStatic-MediumLoad.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Scenario01-HighCPU-Static-Node.webtest">
+    <None Include="WebTests\HighCPU-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Scenario02-HighCPU-Static-CSharp.webtest">
+    <None Include="WebTests\HighCPU-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Scenario03-LowUsage-Static-Node.webtest">
+    <None Include="WebTests\LowUsage-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Scenario04-LowUsage-Static-CSharp.webtest">
+    <None Include="WebTests\LowUsage-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Scenario11-HighMemory-Static-Node.webtest">
+    <None Include="WebTests\HighMemory-Node.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Scenario12-HighMemory-Static-CSharp.webtest">
+    <None Include="WebTests\HighMemory-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
