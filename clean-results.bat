@@ -1,1 +1,2 @@
-robocopy ..\azure-functions-performance-test\SampleUsages\bin\Debug\ .\bin /MIR
+rm Scenario*\*.txt
+rm Scenario*\*.pdf

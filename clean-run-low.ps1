@@ -1,5 +1,4 @@
-rm Scenario*\*.txt
-rm Scenario*\*.pdf
+.\clean-results.bat
 
 pushd Scenario05-Queue-HighCPU-Static-Node
 .\run-low.bat | tee output.txt
