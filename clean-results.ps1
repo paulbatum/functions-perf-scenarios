@@ -1,2 +1,2 @@
-rm Scenario*\*.txt
-rm Scenario*\*.pdf
+md run -f
+rm run\* -r

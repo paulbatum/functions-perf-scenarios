@@ -1,8 +1,7 @@
 .\clean-results.ps1
 
-pushd Scenario05-Queue-HighCPU-Static-Node
-.\run-high.bat | tee output.txt
+pushd run
+..\bin\SampleUsages.exe RunScenario ..\scenarios\AzureQueueHighLoadTests.json
 popd
-pushd Scenario06-Queue-HighCPU-Static-CSharp
-.\run-high.bat | tee output.txt
-popd
+
+.\zip-results.ps1

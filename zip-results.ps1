@@ -1,0 +1,1 @@
+Compress-Archive run -DestinationPath ('results-' + (get-date -Format yyyyMMddHHmm) + '.zip')
