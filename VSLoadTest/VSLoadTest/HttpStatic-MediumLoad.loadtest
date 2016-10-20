@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="HttpStatic-MediumLoad" Description="" Owner="" storage="d:\code\functions-perf-scenarios\vsloadtest\vsloadtest\httpstatic-mediumload.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Standard Run" Id="9d693ce3-b72b-482f-be64-6ebc13a4ac46" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="HttpStatic-MediumLoad" Description="" Owner="" storage="c:\code\functions-perf-scenarios\vsloadtest\vsloadtest\httpstatic-mediumload.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Standard Run" Id="9d693ce3-b72b-482f-be64-6ebc13a4ac46" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
     <Scenario Name="Scenario01-HighCPU-Static-Node" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighCPU-Node" Path="webtests\highcpu-node.webtest" Id="750373a8-1cae-4cd2-b9e6-ecdafc9d9083" Percentage="17" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-Node" Path="webtests\highcpu-node.webtest" Id="750373a8-1cae-4cd2-b9e6-ecdafc9d9083" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
