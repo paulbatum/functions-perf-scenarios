@@ -1,6 +1,5 @@
 rm Scenario*\*.txt
-rm Scenario*\*.pdf
-.\purge-storage.bat
+rm Scenario*\*.pdf 
 
 pushd Scenario05-Queue-HighCPU-Static-Node
 .\run-medium.bat | tee output.txt
