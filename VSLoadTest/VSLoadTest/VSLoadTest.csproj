@@ -56,6 +56,9 @@
     <None Include="Http-HighLoad.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Http-LowLoad.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="HttpStatic-MediumLoad.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
