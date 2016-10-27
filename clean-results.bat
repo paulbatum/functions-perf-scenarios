@@ -1,0 +1,1 @@
+robocopy ..\azure-functions-performance-test\SampleUsages\bin\Debug\ .\bin /MIR
