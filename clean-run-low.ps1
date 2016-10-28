@@ -1,4 +1,4 @@
-.\clean-results.bat
+.\clean-results.ps1
 
 pushd Scenario05-Queue-HighCPU-Static-Node
 .\run-low.bat | tee output.txt
