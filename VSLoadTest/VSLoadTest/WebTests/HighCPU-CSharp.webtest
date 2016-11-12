@@ -6,7 +6,7 @@
     </Request>
   </Items>
   <ContextParameters>
-    <ContextParameter Name="MatrixSize" Value="64" />
+    <ContextParameter Name="MatrixSize" Value="128" />
     <ContextParameter Name="HostnamePrefix" Value="functiondevpbperf" />
   </ContextParameters>
 </WebTest>
