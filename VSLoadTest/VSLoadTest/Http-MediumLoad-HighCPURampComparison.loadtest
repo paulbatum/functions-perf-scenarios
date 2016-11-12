@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="Http-MediumLoad-HighMemoryRampComparison" Description="" Owner="" storage="c:\code\functions-perf-scenarios\vsloadtest\vsloadtest\http-mediumload-highmemoryrampcomparison.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Standard Run" Id="74afe832-1927-4dde-9073-e98489a19609" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="http-mediumload-highcpurampcomparison - copy" Description="" Owner="" storage="c:\code\functions-perf-scenarios\vsloadtest\vsloadtest\http-mediumload-highcpurampcomparison - copy.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Standard Run" Id="fabcf79b-8022-43f7-ab1d-30ec06f13f6e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
-    <Scenario Name="HighMemory10Users20Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+    <Scenario Name="HighCPU10Users20Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="20" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighMemory-Node-1" Path="webtests\sxs\highmemory-node-1.webtest" Id="12538b58-ec93-4b8d-9f07-8023520594f4" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-CSharp-1" Path="webtests\sxs\highcpu-csharp-1.webtest" Id="1ef357ab-6d1a-4157-879a-9428951c4b90" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
@@ -25,11 +25,11 @@
         </NetworkProfile>
       </NetworkMix>
     </Scenario>
-    <Scenario Name="HighMemory10Users20SecondsControl" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+    <Scenario Name="HighCPU10Users20SecondsDedicated" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="20" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighMemory-Node-2" Path="webtests\sxs\highmemory-node-2.webtest" Id="86dcbe2d-ef6f-427e-aaa8-bdf6e9f71fd7" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-CSharp-2" Path="webtests\sxs\highcpu-csharp-2.webtest" Id="47ebbe70-31cd-40fb-9ac5-6083ea1d7ca4" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
@@ -49,11 +49,11 @@
         </NetworkProfile>
       </NetworkMix>
     </Scenario>
-    <Scenario Name="HighMemory10Users20SecondsDedicated" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+    <Scenario Name="HighCPU10Users20SecondsControl" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="20" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighMemory-Node-ded1" Path="webtests\sxs\highmemory-node-ded1.webtest" Id="c8e5e403-da2f-4093-b126-5db999cbc612" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-CSharp-ded1" Path="webtests\sxs\highcpu-csharp-ded1.webtest" Id="af812e13-8760-4ce6-9711-c9b23affc08f" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
@@ -73,11 +73,11 @@
         </NetworkProfile>
       </NetworkMix>
     </Scenario>
-    <Scenario Name="HighMemory10Users30Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+    <Scenario Name="HighCPU10Users30Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighMemory-Node-3" Path="webtests\sxs\highmemory-node-3.webtest" Id="0a4dff1a-08c0-4ce9-9dce-6dbd6f40c6d5" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-CSharp-3" Path="webtests\sxs\highcpu-csharp-3.webtest" Id="b4e0ed74-0897-41f7-9f6e-8587f9c96952" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
@@ -97,11 +97,11 @@
         </NetworkProfile>
       </NetworkMix>
     </Scenario>
-    <Scenario Name="HighMemory10Users40Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+    <Scenario Name="HighCPU10Users40Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="40" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighMemory-Node-4" Path="webtests\sxs\highmemory-node-4.webtest" Id="da77fbe2-9f1a-478e-a63c-4680f4ba2c8b" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-CSharp-4" Path="webtests\sxs\highcpu-csharp-4.webtest" Id="4b9cf653-c70b-40a3-9f74-d39129510e9d" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">

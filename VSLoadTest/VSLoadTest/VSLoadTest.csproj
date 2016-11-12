@@ -59,6 +59,9 @@
     <None Include="Http-LowLoad.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Http-MediumLoad-HighCPURampComparison.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Http-MediumLoad-HighMemoryRampComparison.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -81,6 +84,24 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="WebTests\HighMemory-CSharp.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WebTests\SxS\HighCPU-CSharp-ded1.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WebTests\SxS\HighCPU-CSharp-4.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WebTests\SxS\HighCPU-CSharp-3.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WebTests\SxS\HighCPU-CSharp-2.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WebTests\SxS\HighCPU-CSharp-1.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WebTests\SxS\HighMemory-Node-ded1.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="WebTests\SxS\HighMemory-Node-4.webtest">
