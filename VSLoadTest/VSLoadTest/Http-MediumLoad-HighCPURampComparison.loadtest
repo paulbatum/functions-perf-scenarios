@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="http-mediumload-highcpurampcomparison - copy" Description="" Owner="" storage="c:\code\functions-perf-scenarios\vsloadtest\vsloadtest\http-mediumload-highcpurampcomparison - copy.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Standard Run" Id="fabcf79b-8022-43f7-ab1d-30ec06f13f6e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="Http-MediumLoad-HighCPURampComparison" Description="" Owner="" storage="c:\code\functions-perf-scenarios\vsloadtest\vsloadtest\http-mediumload-highcpurampcomparison.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Standard Run" Id="fabcf79b-8022-43f7-ab1d-30ec06f13f6e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
     <Scenario Name="HighCPU10Users20Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
@@ -29,7 +29,7 @@
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="20" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighCPU-CSharp-2" Path="webtests\sxs\highcpu-csharp-2.webtest" Id="47ebbe70-31cd-40fb-9ac5-6083ea1d7ca4" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-CSharp-ded1" Path="webtests\sxs\highcpu-csharp-ded1.webtest" Id="af812e13-8760-4ce6-9711-c9b23affc08f" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
@@ -53,7 +53,7 @@
       <ThinkProfile Value="0" Pattern="Off" />
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="20" StepRampTime="0" />
       <TestMix>
-        <TestProfile Name="HighCPU-CSharp-ded1" Path="webtests\sxs\highcpu-csharp-ded1.webtest" Id="af812e13-8760-4ce6-9711-c9b23affc08f" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="HighCPU-CSharp-2" Path="webtests\sxs\highcpu-csharp-2.webtest" Id="47ebbe70-31cd-40fb-9ac5-6083ea1d7ca4" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
@@ -102,6 +102,30 @@
       <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="40" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="HighCPU-CSharp-4" Path="webtests\sxs\highcpu-csharp-4.webtest" Id="4b9cf653-c70b-40a3-9f74-d39129510e9d" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestMix>
+      <BrowserMix>
+        <BrowserProfile Percentage="100">
+          <Browser Name="Internet Explorer 9.0" MaxConnections="6">
+            <Headers>
+              <Header Name="User-Agent" Value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+              <Header Name="Accept" Value="*/*" />
+              <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+              <Header Name="Accept-Encoding" Value="GZIP" />
+            </Headers>
+          </Browser>
+        </BrowserProfile>
+      </BrowserMix>
+      <NetworkMix>
+        <NetworkProfile Percentage="100">
+          <Network Name="LAN" BandwidthInKbps="1000000" NetworkProfileConfigurationXml="&lt;Emulation&gt;&lt;VirtualChannel name=&quot;defaultChannel&quot;&gt;&lt;FilterList/&gt;&lt;VirtualLink instances=&quot;1&quot; name=&quot;defaultLink&quot;&gt;&lt;LinkRule dir=&quot;upstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;LinkRule dir=&quot;downstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;/VirtualLink&gt;&lt;/VirtualChannel&gt;&lt;/Emulation&gt;" />
+        </NetworkProfile>
+      </NetworkMix>
+    </Scenario>
+    <Scenario Name="HighCPU10Users60Seconds" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+      <ThinkProfile Value="0" Pattern="Off" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="60" StepRampTime="0" />
+      <TestMix>
+        <TestProfile Name="HighCPU-CSharp-5" Path="webtests\sxs\highcpu-csharp-5.webtest" Id="c959a02b-e732-40a5-a0c2-b5f1c645fbfe" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
         <BrowserProfile Percentage="100">
@@ -517,7 +541,7 @@
     </CounterSet>
   </CounterSets>
   <RunConfigurations>
-    <RunConfiguration Name="Standard Run" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="1500" WarmupTime="60" CoolDownTime="240" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="120" UseMultipleIPs="false" TestAgentConfiguration="Default" AgentDiagnosticsLevel="Warning">
+    <RunConfiguration Name="Standard Run" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="1500" WarmupTime="60" CoolDownTime="240" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" UseMultipleIPs="false" TestAgentConfiguration="Default" AgentDiagnosticsLevel="Warning">
       <CounterSetMappings>
         <CounterSetMapping ComputerName="[CONTROLLER MACHINE]">
           <CounterSetReferences>

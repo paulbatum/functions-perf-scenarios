@@ -3,7 +3,7 @@
   <Scenarios>
     <Scenario Name="Scenario01-HighCPU-Static-Node" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="60" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="HighCPU-Node" Path="webtests\highcpu-node.webtest" Id="750373a8-1cae-4cd2-b9e6-ecdafc9d9083" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
@@ -27,7 +27,7 @@
     </Scenario>
     <Scenario Name="Scenario02-HighCPU-Static-CSharp" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="60" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="HighCPU-CSharp" Path="webtests\highcpu-csharp.webtest" Id="a6a58a40-33dd-418b-8b74-06c80438bfd1" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
@@ -51,7 +51,7 @@
     </Scenario>
     <Scenario Name="Scenario03-LowUsage-Static-Node" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="60" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="LowUsage-Node" Path="webtests\lowusage-node.webtest" Id="3477dca4-a1c9-49c5-a557-0f39cc5b0f5d" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
@@ -75,7 +75,7 @@
     </Scenario>
     <Scenario Name="Scenario04-LowUsage-Static-CSharp" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="60" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="LowUsage-CSharp" Path="webtests\lowusage-csharp.webtest" Id="9e9b17e1-7dc8-4b88-958b-c659af51538c" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
@@ -99,7 +99,7 @@
     </Scenario>
     <Scenario Name="Scenario11-HighMemory-Static-Node" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="60" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="HighMemory-Node" Path="webtests\highmemory-node.webtest" Id="a89b612a-8b45-474b-952d-a6ab89c39c0f" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
@@ -123,7 +123,7 @@
     </Scenario>
     <Scenario Name="Scenario12-HighMemory-Static-CSharp" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0" Pattern="Off" />
-      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="30" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="100" StepUsers="10" StepDuration="60" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="HighMemory-CSharp" Path="webtests\highmemory-csharp.webtest" Id="e9f00fa6-33a4-45c4-b618-ed16d97ae8b5" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
@@ -541,7 +541,7 @@
     </CounterSet>
   </CounterSets>
   <RunConfigurations>
-    <RunConfiguration Name="Standard Run" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="1500" WarmupTime="60" CoolDownTime="240" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" UseMultipleIPs="false" TestAgentConfiguration="Default" AgentDiagnosticsLevel="Warning">
+    <RunConfiguration Name="Standard Run" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="1800" WarmupTime="60" CoolDownTime="240" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" UseMultipleIPs="false" TestAgentConfiguration="Default" AgentDiagnosticsLevel="Warning">
       <CounterSetMappings>
         <CounterSetMapping ComputerName="[CONTROLLER MACHINE]">
           <CounterSetReferences>

@@ -86,6 +86,12 @@
     <None Include="WebTests\HighMemory-CSharp.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="WebTests\SxS\HighCPU-CSharp-6.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WebTests\SxS\HighCPU-CSharp-5.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="WebTests\SxS\HighCPU-CSharp-ded1.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
